@@ -28,51 +28,6 @@ body{
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
 }
 
-.h3UP{
-  font-size: 20px;
-  text-align: center;
-  margin-top: 3%;
-  margin-bottom: 1%;
-  color: #707070;
-  
-}
-
-.h3UP:after{
-  content: '';
-  display: block;
-  width: 30%;
-  height: 3px;
-  background: #ffffff;
-  margin: 0 auto;
-  border-radius: 50px;
-}
-
-.h3IN{
-  font-size: 20px;
-  text-align: center;
-  margin-top: 3%;
-  margin-bottom: 1%;
-  color: #707070;
-  
-}
-
-.h3IN:after{
-  content: '';
-  display: block;
-  width: 80%;
-  height: 3px;
-  background: #707070;
-  margin: 0 auto;
-  border-radius: 50px;
-}
-
-.h3all{
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center
-}
-
 .aa{
   text-decoration: none;
   color: #707070;
@@ -164,4 +119,40 @@ body{
   padding: 10px;
   border-radius: 50px;
   display: none;
+}
+
+/*NAV BAR*/
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.a{
+  position: relative;
+  text-decoration: none;
+  color: #707070;
+  font-size: 25px;
+  padding: 0 10px;
+  transition: all .4s ease-out;
+}
+
+.a:after{
+  content: "";
+  position: absolute;
+  background-color: #707070;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: all .4s ease-out; 
+}
+
+.a:hover{
+  color:#707070
+}
+
+.a:hover:after{
+  width: 100%;
 }
